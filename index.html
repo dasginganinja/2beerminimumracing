@@ -125,8 +125,10 @@
       
        var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", "https://www.twitch.tv/embed/2BeerMinimumRacing/chat?parent=2beerminimum.com");
-        ifrm.style.width = "640px";
+        ifrm.style.width = "100%";
         ifrm.style.height = "480px";
+        ifrm.id = "chat_embed";
+        ifrm.style.border = "0";
         document.getElementById("twitch-chat").appendChild(ifrm);
      
     </script>
