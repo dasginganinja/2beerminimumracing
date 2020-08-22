@@ -20,10 +20,9 @@
   
   <div class="jumbotron jumbotron-fluid p-4 p-md-5 text-white bg-dark">
     <div class="row">
-    <div class="col-md-6 px-0">
+    <div class="col-md-6">
       <h2 class="display-4 font-italic"><small>Not all heroes wear capes.</small></h1>
       <p class="lead my-3">We got bored in quarantine. iRacing subscriptions were purchased and we all started down a path that ultimately led here.</p><p class="lead my-3">If we're streaming you'll see it here.  We also have chat, so drop in and <em>let us know how bad our driving is</em> 🙃</p>
-      <div id="twitch-chat"></div>
     </div>
     
     <div class="col-md-6 px-0">
@@ -34,6 +33,9 @@
   
   <!-- Main Body -->
   <div class="container pb-5">
+    <h2>SPEAK, FREAK!</h2>
+    <div id="twitch-chat"></div>
+    
     <h2>The Crew</h2>
     <ul>
       <li><img src="http://iracingbanner.com/banner/style1/rd/rwciI/465575.png" alt="Tom's Stats"></li>
@@ -120,6 +122,12 @@
         // only needed if your site is also embedded on embed.example.com and othersite.example.com 
         parent: ["2beerminimum.com", "2beerminimum.netlify.app"]
       });
+      
+       var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "https://www.twitch.tv/embed/2BeerMinimumRacing/chat?parent=2beerminimum.com");
+        ifrm.style.width = "640px";
+        ifrm.style.height = "480px";
+        document.getElementById("twitch-chat").appendChild(ifrm);
      
     </script>
 </body>
