@@ -13,7 +13,7 @@
   <!-- Nav -->
   <nav class="sticky-top navbar navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand" href="/">
-      <img src="/dont-give-a-duck.png" alt="" class="rounded-circle" height="30" width="30">
+      <img src="dont-give-a-duck.png" alt="" class="rounded-circle" height="30" width="30">
       2 Beer Minimum Racing
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,9 @@
             <a class="dropdown-item" href="https://twitch.tv/2BeerMinimumRacing">Tom (@2BeerMinimumRacing)</a>
             <a class="dropdown-item" href="https://twitch.tv/space__cloud">@Space__Cloud</a>
             <a class="dropdown-item" href="https://twitch.tv/avoidralph">@AvoidRalph</a>
-            <a class="dropdown-item" href="https://www.twitch.tv/team/goodvibes">TEAM GOOD VIBES</a>
+            <a class="dropdown-item" href="https://twitch.tv/bigyheech">@BigYheech</a>
+            <a class="dropdown-item" href="https://twitch.tv/artmann">@ArtMann</a>            
+            <a class="dropdown-item" href="https://twitch.tv/team/goodvibes">TEAM GOOD VIBES</a>
             <!--<a class="dropdown-item" href="#dave">Dave (@Rockems87)</a>-->
           </div>
         </li>
@@ -68,14 +70,12 @@
     <div class="row">
     <div class="col-md-6">
       <h2 class="display-4 font-italic"><small>Not all heroes wear capes.</small></h1>
-      <p class="lead my-3">We got bored in quarantine. iRacing subscriptions were purchased and we all started down a path that ultimately led here.</p><p class="lead my-3">If we're streaming you'll see it here.  We also have chat, so drop in and <em>let us know how bad our driving is</em> 🙃</p>
+      <p class="lead my-3">We got bored in quarantine. iRacing subscriptions were purchased and we all started down a path that ultimately led here. Since then we've picked FPS back up and stream a bit of Escape from Tarkov. We also do cooking streams and make some <em><a href="#sauce">hot sauce</em></a>.</p>
+      <p class="lead my-3">If we're streaming you'll see it here.  We also have chat, so drop in and <em>let us know how bad our driving is</em> 🙃</p>
     </div>
     
     <div class="col-md-6 px-0">
         <div id="twitch-embed"></div>
-      <div class="alert alert-info" role="alert">
-        Eventually this will switch out whoever is live :) JS coming soon to a PR near you
-      </div>
     </div>
   </div>
 </div>
@@ -91,19 +91,27 @@
     <div class="container">
       <a name="sauce"></a>
       <div class="row">
-        <div class="col-6">
-          <h2 class="display-3"><small>Wanna GET SAUCED?</small></h2>
-          <p>
-            I've been working on some hot sauces and I think y'all would like to try these out.  I'm aiming for these sauces to be <strong>BALANCED</strong> and <strong>flavorful</strong> with a decent bit of heat that even your mom would like.
-          </p>
+        <div class="col-12">
+          <div class="alert-info px-3 pb-1">
+            <h2 class="display-3"><small>Wanna GET SAUCED?</small></h2>
+            <p>
+              I've been working on some hot sauces and I think y'all would like to try these out.  I'm aiming for these sauces to be <strong>BALANCED</strong> and <strong>flavorful</strong> with a decent bit of heat that even your mom would like.
+            </p>
+            <p>
+              Sauce is $7 per 5oz woozy bottle.  Shipping for up to 4 bottles should be $10 via USPS flat rate envelope.
+            </p>
+            <p>
+              If you're interested in some sauce, drop me an email:<br />
+              <a class="btn btn-primary btn-email" target="_blank" href="mailto:2beerminimumracing@gmail.com?subject=I%20want%20to%20get%20SAUCED&body=Hey%202beer!%20%20I%20want%20to%20get%20some%20of%20your%20sauce.%20Here%20is%20what%20I'm%20interested%20in%3A%0A*%0A*%0A">EMAIL ME</a>
+            </p>
+          </div>
         </div>
       </div>
       
-      <h3>The Sauces</h3>
-      <div class="container py-5">
+      <div class="container py-3">
         <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6 col-xl-4 mb-3">
-            <div class="card text-black">
+          <div class="col-md-8 col-lg-6 col-xl-4 mb-3" style="display: flex;">
+            <div class="card card--sauce text-black">
               <img
                 src="img/mangopeach.png"
                 class="card-img-top"
@@ -111,16 +119,16 @@
               />
               <div class="card-body">
                 <div class="text-center">
-                  <h4 class="card-title">Mango Peach Habanero</h4>
+                  <h3 class="card-title">Mango Peach Habanero</h3>
                   <p class="text-muted mb-4">This is the sauce that started it all.</p>
                   <p class="mb-4 ">Habaneros seem to pair well with these fruity flavors and this sauce will coat your chips / life. Definitely the crack sauce and the one you want to gift to yourself.</p>
-                  <button type="button" class="btn btn-primary">I want this sauce</button>
+                  <button type="button" class="btn btn-warning btn-disabled">SOLD OUT</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-8 col-lg-6 col-xl-4 mb-3">
-            <div class="card text-black">
+          <div class="col-md-8 col-lg-6 col-xl-4 mb-3" style="display: flex;">
+            <div class="card card--sauce text-black">
               <img
                 src="img/guajillolime.png"
                 class="card-img-top"
@@ -128,16 +136,17 @@
               />
               <div class="card-body">
                 <div class="text-center">
-                  <h4 class="card-title">Guajillo Serrano Lime</h4>
+                  <h3 class="card-title">Guajillo Serrano Lime</h3>
                   <p class="text-muted mb-4">This sauce brings the heat and goes well with anything that has lime.</p>
                   <p class="mb-4">It will amplify it to a next level kind of heat and flavor.</p>
+                  <p class="mb-4"><a href="https://www.youtube.com/watch?v=lm2Knpz5gH4">Made on stream 9/30/2021 (VOD LINK)</a></p>
                   <button type="button" class="btn btn-primary">I want this sauce</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-8 col-lg-6 col-xl-4 mb-3">
-            <div class="card text-black">
+          <div class="col-md-8 col-lg-6 col-xl-4 mb-3" style="display: flex;">
+            <div class="card card--sauce text-black">
               <img
               src="img/jalapenothaiapple.png"
               class="card-img-top"
@@ -145,9 +154,128 @@
               />
               <div class="card-body">
                 <div class="text-center">
-                  <h4 class="card-title">Apple Jalapeño Thai Chili</h4>
+                  <h3 class="card-title">Apple Jalapeño Thai Chili</h3>
                   <p class="text-muted mb-4">This sweet sauce is the thinnest to date and goes well as a food topper.</p>
                   <p class="mb-4">Try on potatoes, eggs, or on some poultry. Not too hot but it pairs nicely!</p>
+                  <p class="mb-4"><a href="https://www.youtube.com/watch?v=lm2Knpz5gH4">Made on stream 9/30/2021 (VOD LINK)</a></p>
+                  <button type="button" class="btn btn-primary">I want this sauce</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6 col-xl-4 mb-3" style="display: flex;">
+            <div class="card card--sauce text-black">
+              <img
+                src="img/buttburner.png"
+                class="card-img-top"
+                alt="..."
+                style="background-color: #4d2201; padding: 25px 10px;"
+              />
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="card-title">Butt Burner</h3>
+                  <p class="text-muted mb-4">First Carolina Reaper sauce!!</p>
+                  <p class="mb-4">Spice is the name of the game. Habaneros, Carolina Reapers and some smoke bring a slow burn and a light smokiness.</p>
+                  <button type="button" class="btn btn-primary">I want this sauce</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-4 mb-3" style="display: flex;">
+            <div class="card card--sauce text-black">
+              <img
+              src="img/spacebeer.png"
+              class="card-img-top"
+              alt="..."
+              style="background-color: #934601; padding: 25px 10px;"
+              />
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="card-title">Space Beer</h3>
+                  <p class="text-muted mb-4">Collab with @space__cloud</p>
+                  <p class="mb-4">I added lots of pineapple to the Butt Burner sauce to create some sweet heat. <strong>FUEGO!!!</strong><br/><em>Contains Carolina Reapers!</em></p>
+                  <button type="button" class="btn btn-primary">I want this sauce</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-4 mb-3" style="display: flex;">
+            <div class="card card--sauce text-black">
+              <img
+                src="img/greentang.png"
+                class="card-img-top"
+                alt="..."
+                style="background-color: #7d6304; padding: 25px 10px;"
+              />
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="card-title">Green Tang</h3>
+                  <p class="text-muted mb-4">Color Series: Green Serrano</p>
+                  <p class="mb-4">Serrano peppers are the focus here. This sauce has a bit of a sweet/sour tang to it!</p>
+                  <p class="mb-4 "><a href="https://www.twitch.tv/videos/1190508212?t=03h43m08s">Made on stream 10/29/2021 (VOD link)</a></p>
+                  <button type="button" class="btn btn-primary">I want this sauce</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6 col-xl-4 mb-3" style="display: flex;">
+            <div class="card card--sauce text-black">
+              <img
+                src="img/redtang.png"
+                class="card-img-top"
+                alt="..."
+                style="background-color: #a24a02; padding: 25px 10px;"
+              />
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="card-title">Red Tang</h3>
+                  <p class="text-muted mb-4">Color Series: Red Habanero</p>
+                  <p class="mb-4">Since red peppers were the focus for this sauce I used bell and habaneros. Honey, garlic, onion and some lager round this sauce out.</p>
+                  <p class="mb-4"><a href="https://www.twitch.tv/videos/1190508212?t=01h09m34s">Made on stream 10/29/2021 (VOD link)</a></p>
+                  <button type="button" class="btn btn-primary">I want this sauce</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-4 mb-3" style="display: flex;">
+            <div class="card card--sauce text-black">
+              <img
+              src="img/peachvidalia.png"
+              class="card-img-top"
+              alt="..."
+              style="background-color: #8f6103; padding: 25px 10px;"
+              />
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="card-title">Peach Vidalia</h3>
+                  <p class="text-muted mb-4">Color Series: Orange Habanero</p>
+                  <p class="mb-4">This sauce features orange habaneros</p>
+                  <p class="mb-4"><a href="https://www.twitch.tv/videos/1190508212?t=00h38m47s">Made on stream 10/29/2021 (VOD link)</a></p>
+                  <button type="button" class="btn btn-primary">I want this sauce</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-6 col-xl-4 mb-3" style="display: flex;">
+            <div class="card card--sauce text-black">
+              <img
+                src="img/jawjacker.png"
+                class="card-img-top"
+                alt="..."
+                style="background-color: #c18000; padding: 25px 10px;"
+              />
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="card-title">Jaw Jacker</h3>
+                  <p class="text-muted mb-4">Latest and the greatest! Thin and spicy!</p>
+                  <p class="mb-4">I threw away all of my previous methods for this sauce. It's thin, packs a punch, and is the hottest habanero sauce I have! <br /><strong>(and we were told oranges wouldn't pair with this 😂)</strong></p>
+                  <p class="mb-4 "><a href="https://www.twitch.tv/videos/1209352445?t=00h10m06s">Made on stream 11/18/2021 (VOD link)</a></p>
                   <button type="button" class="btn btn-primary">I want this sauce</button>
                 </div>
               </div>
@@ -161,13 +289,13 @@
   <!-- Main Body -->
   <div class="container pb-5">
     
-    <h2>RACING</h2>
-    <img src="http://iracingbanner.com/banner/style1/rd/rwciI/465575.png" alt="Tom's Stats">
+    <!-- <h2>RACING</h2> -->
+    <!-- <img src="http://iracingbanner.com/banner/style1/rd/rwciI/465575.png" alt="Tom's Stats"> -->
 
     
     <h2>Community <i class="fa fa-discord-alt" aria-hidden="true"></i></h2>
     <div id="discord">
-      <p class="join"><a href="/discord">Join up in our Discord and chime in!</a></p>
+      <p class="join"><a href="https://2beerminimum.com/discord">Join up in our Discord and chime in!</a></p>
     </div>
 
   </div>
@@ -205,8 +333,9 @@
       }
 
       $(document).ready(function() {
-        $(".btn.btn-primary").click(function() {
-          justkidding();
+        $(".card--sauce .btn.btn-primary").click(function() {
+          // justkidding();
+          window.open($('.btn-email').attr('href'), '_blank');
         })
       });
     </script>
