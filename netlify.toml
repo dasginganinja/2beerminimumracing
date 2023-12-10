@@ -3,3 +3,9 @@
   to = "https://discord.gg/DxcgXas6U5"
   status = 302
   force = false
+
+[[redirects]]
+  from = "/srt4-acr-marketplace-link"
+  to = "https://www.facebook.com/marketplace/item/389789740058483/"
+  status = 302
+  force = false
